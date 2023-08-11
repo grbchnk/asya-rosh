@@ -1,3 +1,4 @@
+localStorage.removeItem("endDate");
 if (localStorage.getItem("endDate")) {
   var endDate = new Date(localStorage.getItem("endDate"));
 } else {
@@ -23,7 +24,10 @@ var countdown = setInterval(function () {
     var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     document.getElementById("hours").textContent = hours;
+    document.getElementById("hours2").textContent = hours;
     document.getElementById("minutes").textContent = minutes;
+    document.getElementById("minutes2").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
+    document.getElementById("seconds2").textContent = seconds;
   }
 }, 1000);
