@@ -32,7 +32,10 @@ if (savedSeats) {
 
 var timerInterval;
 
-updateTimer();
+var randomTime = Math.floor(Math.random() * 30);
+var timeout = randomTime * 1000;
+
+timerInterval = setTimeout(updateTimer, timeout);
 
 window.addEventListener("beforeunload", function () {
   clearTimeout(timerInterval);

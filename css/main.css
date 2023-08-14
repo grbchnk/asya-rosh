@@ -5155,3 +5155,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     display: none;
   }
 }
+
+#product-component-1692034090527,
+#product-component-1692034484662 {
+  margin-top: 20px !important;
+  margin: 0px auto;
+}
