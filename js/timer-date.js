@@ -1,4 +1,4 @@
-localStorage.removeItem("endDate");
+// localStorage.removeItem("endDate");
 if (localStorage.getItem("endDate")) {
   var endDate = new Date(localStorage.getItem("endDate"));
 } else {
